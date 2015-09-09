@@ -14,6 +14,8 @@
   </thead>
 
   <tbody>
+      
+
     <% @products.each do |product| %>
       <tr>
         <tr>
@@ -22,6 +24,7 @@
     <td><%= print_price(product.price) %></td>
             <td><%= print_stock(product.stock) %></td>
     <td> <%= link_to "show", product_path(product)%></td>
+            <td><%= button_to "Add to Cart", order_items_path(product_id: product.id)%></td>
       </tr>
       </tr>
     <% end %>

@@ -6,8 +6,11 @@ class OrderItem < ActiveRecord::Base
     def product_id=(input)
       
         super
+    end
         
         def order_id=(input)
       
         super
+        end
+            
 end
