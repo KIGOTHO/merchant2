@@ -3,14 +3,13 @@ class OrderItem < ActiveRecord::Base
     belongs_to :product 
     
     
-    def product_id=(input)
-      
-        super
+    
+    def price
+        product.price 
     end
-        
-        def order_id=(input)
-      
-        super
+    
+        def subtotal
+            quantity * price
         end
             
 end
