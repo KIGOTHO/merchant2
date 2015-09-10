@@ -11,5 +11,4 @@ class OrderItem < ActiveRecord::Base
         def subtotal
             quantity * price
         end
-            
 end
