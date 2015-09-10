@@ -9,6 +9,7 @@ class OrderItem < ActiveRecord::Base
     end
     
         def subtotal
-            quantity * price
+          quantity * price
         end
+      
 end

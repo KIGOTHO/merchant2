@@ -3,6 +3,7 @@ class Order < ActiveRecord::Base
     
     
    def total
+       
    end
     
      
